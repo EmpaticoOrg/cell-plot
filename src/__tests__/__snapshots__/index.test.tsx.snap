@@ -1,0 +1,241 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`something 1`] = `
+<div
+  className="sc-bdVaJa dqbzLu"
+>
+  <div
+    className="sc-bwzfXH kulSxP"
+  >
+    <div
+      className="sc-ifAKCX eYukKq"
+    >
+      x0
+    </div>
+    <div
+      className="sc-bxivhb hvlrXC"
+    >
+      y0
+    </div>
+    <div
+      className="sc-bxivhb hvlrXC"
+    >
+      y1
+    </div>
+    <div
+      className="sc-bxivhb hvlrXC"
+    >
+      y2
+    </div>
+  </div>
+  <div
+    className="sc-bxivhb hvlrXC"
+  >
+    <div
+      className="sc-bwzfXH kulSxP"
+      style={
+        Object {
+          "flex": "1 1 auto",
+        }
+      }
+    >
+      <div
+        className="sc-bdVaJa dqbzLu"
+      >
+        <div
+          className="sc-htpNat kBMfje"
+        >
+          x0
+        </div>
+        <div
+          className="sc-htpNat kBMfje"
+        >
+          x1
+        </div>
+        <div
+          className="sc-htpNat kBMfje"
+        >
+          x2
+        </div>
+      </div>
+      <div
+        className="sc-bxivhb hvlrXC"
+      >
+        <div
+          style={
+            Object {
+              "flex": "1 1 auto",
+              "position": "relative",
+            }
+          }
+        >
+          <div
+            className="sc-EHOje eoRSaj"
+            style={
+              Object {
+                "borderLeft": undefined,
+              }
+            }
+          >
+            <div
+              className="sc-bZQynM loNdad"
+              style={
+                Object {
+                  "borderRight": undefined,
+                  "borderTop": undefined,
+                }
+              }
+            >
+              <div
+                className="sc-gzVnrw gfFhBZ"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderBottom": undefined,
+                  }
+                }
+              />
+              <div
+                className="sc-gzVnrw gfFhBZ"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderBottom": undefined,
+                  }
+                }
+              />
+              <div
+                className="sc-gzVnrw gfFhBZ"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderBottom": undefined,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="sc-bZQynM loNdad"
+              style={
+                Object {
+                  "borderRight": undefined,
+                  "borderTop": undefined,
+                }
+              }
+            >
+              <div
+                className="sc-gzVnrw gfFhBZ"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderBottom": undefined,
+                  }
+                }
+              />
+              <div
+                className="sc-gzVnrw gfFhBZ"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderBottom": undefined,
+                  }
+                }
+              />
+              <div
+                className="sc-gzVnrw gfFhBZ"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderBottom": undefined,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="sc-bZQynM loNdad"
+              style={
+                Object {
+                  "borderRight": undefined,
+                  "borderTop": undefined,
+                }
+              }
+            >
+              <div
+                className="sc-gzVnrw gfFhBZ"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderBottom": undefined,
+                  }
+                }
+              />
+              <div
+                className="sc-gzVnrw gfFhBZ"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderBottom": undefined,
+                  }
+                }
+              />
+              <div
+                className="sc-gzVnrw gfFhBZ"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderBottom": undefined,
+                  }
+                }
+              />
+            </div>
+          </div>
+          <div
+            className="sc-htoDjs btzGSf"
+            style={
+              Object {
+                "height": "33.33333333333333%",
+                "left": "66.66666666666666%",
+                "top": "33.33333333333333%",
+                "width": "33.33333333333333%",
+              }
+            }
+          />
+          <div
+            className="sc-htoDjs btzGSf"
+            style={
+              Object {
+                "height": "33.33333333333333%",
+                "left": "33.33333333333333%",
+                "top": "66.66666666666666%",
+                "width": "33.33333333333333%",
+              }
+            }
+          />
+          <div
+            className="sc-htoDjs btzGSf"
+            style={
+              Object {
+                "height": "33.33333333333333%",
+                "left": "0%",
+                "top": "33.33333333333333%",
+                "width": "33.33333333333333%",
+              }
+            }
+          />
+          <div
+            className="sc-htoDjs btzGSf"
+            style={
+              Object {
+                "height": "33.33333333333333%",
+                "left": "33.33333333333333%",
+                "top": "0%",
+                "width": "33.33333333333333%",
+              }
+            }
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
