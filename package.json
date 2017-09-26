@@ -1,0 +1,29 @@
+{
+  "name": "cell-plot",
+  "version": "1.0.0",
+  "description": "React components for a plottable coordinate plane built with Flexbox cells.",
+  "main": "dist/index.main.js",
+  "module": "dist/index.module.js",
+  "types": "dist/index.d.ts",
+  "repository": "https://github.com/empaticoorg/cell-plot",
+  "author": "Lance Ivy <lance@cainley.net>",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn clean && yarn compile && rollup -c && cp lib/*.d.ts dist",
+    "compile": "yarn tsc",
+    "problems": "yarn lint && yarn tsc --noEmit",
+    "lint": "tslint -c tslint.json \"src/**/*.tsx\" \"src/**/*.ts\"",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "rollup": "^0.50.0",
+    "rollup-plugin-commonjs": "^8.2.1",
+    "rollup-plugin-filesize": "^1.4.2",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "tslint": "^5.7.0",
+    "typescript": "^2.4.2"
+  },
+  "dependencies": {
+    "tslib": "^1.7.1"
+  }
+}
