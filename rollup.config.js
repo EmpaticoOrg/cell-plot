@@ -1,6 +1,7 @@
 import nodeResolve from 'rollup-plugin-node-resolve'
 import filesize from 'rollup-plugin-filesize'
 import commonjs from 'rollup-plugin-commonjs'
+import pkg from './package.json'
 
 const plugins = [
   nodeResolve({
@@ -17,6 +18,7 @@ export default [
       file: "./dist/index.main.js",
       format: "cjs"
     },
+    external: ['react'],
     plugins
   },
   {
@@ -25,6 +27,7 @@ export default [
       file: "./dist/index.module.js",
       format: "es"
     },
+    external: ['react'].concat(Object.keys(pkg.dependencies)),
     plugins
   }
 ]

@@ -10,6 +10,8 @@
     "outDir": "lib/",
 
     "importHelpers": true,
+    "jsx": "react",
+    "lib": ["es6", "dom"],
 
     "noImplicitAny": true,
     "strictNullChecks": true,
