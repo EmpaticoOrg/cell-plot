@@ -31,19 +31,7 @@ function clamp(value: number, {min, max}: {min: number, max: number}): number {
 }
 
 /**
- * CellPlot is a block-level structure that acts like a hybrid of a table and a graph. It makes the
- * following assumptions:
- *
- * 1. The x and y values proceed in regular increments.
- * 2. The x and y axes are numeric, but not continuous. They proceed in finite steps with no
- *    intermediate values.
- * 3. Not every x and y value is labeled, but the quantity of x and y values are some multiple of
- *    the quantity of x and y labels.
- * 4. The lowest x and y values are in the top left corner.
- *
- * Using these assumptions, it will lay out labels and grid lines useful for placing positioned
- * child elements. The children exist in a relative positioning container, and should access the
- * PlotContext for variables needed to calculate their position.
+ * Creates optionally clickable cells and a plottable coordinate plane.
  */
 export default class CellPlot extends React.Component<Props> {
   static childContextTypes = {...PlotContextProps, ...PlotConsumerProps};
