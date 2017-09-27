@@ -1,11 +1,13 @@
 src/
 test/
 lib/
+stories/
+.circleci/
+.storybook/
 CODE_OF_CONDUCT.md
 gulpfile.js
 tsconfig.json
 tslint.json
 yarn.lock
-.travis.yml
 .npmignore
 rollup.config.js
