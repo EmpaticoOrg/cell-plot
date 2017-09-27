@@ -2,33 +2,41 @@
 
 React components for a plottable coordinate plane built with responsive Flexbox cells.
 
-# Getting Started
+# Example
 
 ```javascript
 import React from 'react';
 import CellPlot, {Positioned} from 'cell-plot';
 
+const Container = ({children}) => (
+  <div style={{width: 300, height: 300, display: 'flex', margin: 10}}>{children}</div>
+)
+
+const Box = ({children}) => (
+  <div style={{height: '100%', backgroundColor: '#884', color: 'white', opacity: 0.8}}>{children}</div>
+);
+
 const MyComponent = ({things}) => (
-  <div style={{width: 300, height: 300, display: 'flex', margin: 10}}>
+  <Container>
     <CellPlot
       xLabels={[<label>left</label>, <label>center</label>, <label>right</label>]}
       yLabels={[<label>top</label>, <label>center</label>, <label>bottom</label>]}
-      xs={[-1, 0, 1]}
-      ys={[-1, 0, 1]}
-      xBorders={['1px solid grey']}
-      yBorders={['1px solid grey']}
+      xs={[1, 2, 3, 4, 5, 6]}
+      ys={[1, 2, 3, 4, 5, 6]}
+      xBorders={['1px solid grey', '1px dotted grey']}
+      yBorders={['1px solid grey', '1px dotted grey']}
       onClick={(x, y) => window.alert(`<${x}, ${y}>`)}>
 
-      <Positioned x={1}  y={0}  width={1} height={1}>East</Positioned>
-      <Positioned x={0}  y={1}  width={1} height={1}>North</Positioned>
-      <Positioned x={-1} y={0}  width={1} height={1}>West</Positioned>
-      <Positioned x={0}  y={-1} width={1} height={1}>South</Positioned>
+      <Positioned x={5} y={3} width={2} height={2}><Box>East</Box></Positioned>
+      <Positioned x={3} y={5} width={2} height={2}><Box>North</Box></Positioned>
+      <Positioned x={1} y={3} width={2} height={2}><Box>West</Box></Positioned>
+      <Positioned x={3} y={1} width={2} height={2}><Box>South</Box></Positioned>
     </CellPlot>
-  </div>
+  </Container>
 )
 ```
 
-![Example](https://user-images.githubusercontent.com/4449/30895902-1ac31114-a302-11e7-8925-6bb1867f9cab.png)
+![CellPlot](https://user-images.githubusercontent.com/4449/30896409-6d54129a-a305-11e7-9790-3391eb46c536.png)
 
 # Details
 
