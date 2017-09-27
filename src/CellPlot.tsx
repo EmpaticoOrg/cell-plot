@@ -81,7 +81,9 @@ export default class CellPlot extends React.Component<Props> {
       <Frame
         innerRef={(el) => this.el = el}
         xLabels={this.props.xLabels}
-        yLabels={this.props.yLabels}>
+        yLabels={this.props.yLabels}
+        xBorder={this.props.xBorders && this.props.xBorders[0]}
+        yBorder={this.props.yBorders && this.props.yBorders[0]}>
 
         <Cells
           xs={this.props.xs}

@@ -5,6 +5,8 @@ export interface Props {
   innerRef: (el: HTMLDivElement) => void;
   xLabels: React.ReactNode[];
   yLabels: React.ReactNode[];
+  xBorder: undefined | string;
+  yBorder: undefined | string;
 }
 
 const Rows = styled.div`
@@ -55,7 +57,7 @@ const Frame: React.SFC<Props> = (props) => {
               <XLabel key={idx}>{label}</XLabel>
             )}
           </Rows>
-          <Fill>
+          <Fill style={{borderTop: props.xBorder, borderBottom: props.xBorder, borderLeft: props.yBorder, borderRight: props.yBorder}}>
             <div
               style={{position: 'relative', flex: '1 1 auto'}}
               ref={props.innerRef}>
