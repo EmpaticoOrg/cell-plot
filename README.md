@@ -2,9 +2,8 @@
 
 React components for a plottable coordinate plane built with responsive Flexbox cells.
 
-# Example
-
-TODO: publish and link to Storybook demo
+* [Example](https://github.com/EmpaticoOrg/cell-plot/blob/master/stories/index.tsx)
+* [Demo](https://empaticoorg.github.io/cell-plot/?left=0)
 
 # Details
 
@@ -15,7 +14,7 @@ TODO: publish and link to Storybook demo
 # Assumptions
 
 1. The x and y values proceed in regular increments.
-2. The x and y axes are numeric, but not continuous. They proceed in finite steps with no intermediate values.
+2. The x and y axes are numeric, but not continuous. They proceed in regular finite steps.
 3. Not every x and y value is labeled, but the quantity of x and y values are some multiple of the quantity of x and y labels.
 4. The lowest x and y values are in the top left corner.
 

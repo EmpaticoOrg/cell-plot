@@ -15,19 +15,21 @@
     "lint": "tslint -c tslint.json \"src/**/*.tsx\" \"src/**/*.ts\"",
     "clean": "rm -rf dist",
     "test": "jest",
-    "storybook": "start-storybook -p 9001 -c .storybook"
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.2.11",
     "@storybook/addon-knobs": "^3.2.10",
     "@storybook/react": "^3.2.11",
+    "@storybook/storybook-deployer": "^2.0.0",
     "@types/jest": "^21.1.1",
     "@types/prop-types": "^15.5.2",
     "@types/react": "^16.0.7",
     "@types/react-test-renderer": "^15.5.4",
-    "@types/storybook__react": "^3.0.5",
     "@types/storybook__addon-actions": "^3.0.1",
     "@types/storybook__addon-knobs": "^3.2.0",
+    "@types/storybook__react": "^3.0.5",
     "jest": "^21.2.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
