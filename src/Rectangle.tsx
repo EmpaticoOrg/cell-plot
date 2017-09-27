@@ -15,7 +15,7 @@ const Container = styled.div`
   position: absolute;
 `;
 
-export default class Positioned extends React.Component<Props & React.HTMLAttributes<HTMLDivElement>> {
+export default class Rectangle extends React.Component<Props & React.HTMLAttributes<HTMLDivElement>> {
   static contextTypes = PlotContextProps;
   context: PlotContext;
 
