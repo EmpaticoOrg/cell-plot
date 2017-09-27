@@ -35,7 +35,9 @@ const YLabel = Centered.extend`
 `;
 
 const Box = Centered.extend`
-  height: 100%;
+  height: calc(100% - 1px);
+  width: calc(100% - 1px);
+  margin: auto;
   color: white;
   opacity: 0.8;
 `;
@@ -55,21 +57,21 @@ storiesOf('CellPlot', module)
         yLabels={[<YLabel>top</YLabel>, <YLabel>center</YLabel>, <YLabel>bottom</YLabel>]}
         xs={rangeToArray([1, xMax])}
         ys={rangeToArray([1, yMax])}
-        xBorders={['1px solid #555', '1px dotted #ccc']}
-        yBorders={['1px solid #555', '1px dotted #ccc']}
+        verticalBorders={['1px solid #555', '1px dotted #ccc']}
+        horizontalBorders={['1px solid #555', '1px dotted #ccc']}
         onClick={action('onClick')}>
 
         <Rectangle x={5} y={3} width={2} height={2}>
           <Box style={{backgroundColor: teal}}>East</Box>
         </Rectangle>
         <Rectangle x={3} y={5} width={2} height={2}>
-          <Box style={{backgroundColor: red}}>North</Box>
+          <Box style={{backgroundColor: red}}>South</Box>
         </Rectangle>
         <Rectangle x={1} y={3} width={2} height={2}>
           <Box style={{backgroundColor: gold}}>West</Box>
         </Rectangle>
         <Rectangle x={3} y={1} width={2} height={2}>
-          <Box style={{backgroundColor: blue}}>South</Box>
+          <Box style={{backgroundColor: blue}}>North</Box>
         </Rectangle>
       </CellPlot>
     </Container>;

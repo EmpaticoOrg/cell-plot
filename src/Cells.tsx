@@ -3,9 +3,9 @@ import styled from 'styled-components';
 
 export interface Props {
   xs: any[];
-  xBorders?: string[];
   ys: any[];
-  yBorders?: string[];
+  verticalBorders?: string[];
+  horizontalBorders?: string[];
   onClick?: (x: any, y: any) => void;
 }
 
@@ -31,24 +31,29 @@ const Cell = styled.div`
  * Cells can be placed inside a Frame to create vertical and horizontal gridlines. It acts as a
  * background layer, and does not render children.
  */
-const Cells: React.SFC<Props> = (props) => {
-  const xBorders = props.xBorders || [];
-  const yBorders = props.yBorders || [];
-
+const Cells: React.SFC<Props> = ({xs, ys, verticalBorders, horizontalBorders, onClick}) => {
   return (
     <Columns>
-      {props.xs.map((x, idx) => (
+      {xs.map((x, idx) => (
         <Column
           key={x}
           style={{
-            borderRight: (idx !== props.xs.length - 1 ? xBorders[(idx + 1) % xBorders.length] : null)
+            borderRight: verticalBorders && (
+              idx !== xs.length - 1 ?
+                verticalBorders[(idx + 1) % verticalBorders.length] :
+                null
+            )
           }}>
-          {props.ys.map((y, idy) => (
+          {ys.map((y, idy) => (
             <Cell
               key={y}
-              onClick={() => props.onClick && props.onClick(x, y)}
+              onClick={() => onClick && onClick(x, y)}
               style={{
-                borderBottom: (idy !== props.ys.length - 1 ? yBorders[(idy + 1) % yBorders.length] : null)
+                borderBottom: horizontalBorders && (
+                  idy !== ys.length - 1 ?
+                    horizontalBorders[(idy + 1) % horizontalBorders.length] :
+                    null
+                )
               }} />
           ))}
         </Column>
@@ -56,4 +61,9 @@ const Cells: React.SFC<Props> = (props) => {
     </Columns>
   );
 };
+Cells.defaultProps = {
+  verticalBorders: [],
+  horizontalBorders: []
+};
+
 export default Cells;
