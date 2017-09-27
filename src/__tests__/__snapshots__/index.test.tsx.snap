@@ -65,6 +65,14 @@ exports[`static render 1`] = `
       </div>
       <div
         className="sc-bxivhb hvlrXC"
+        style={
+          Object {
+            "borderBottom": undefined,
+            "borderLeft": undefined,
+            "borderRight": undefined,
+            "borderTop": undefined,
+          }
+        }
       >
         <div
           style={
@@ -76,18 +84,12 @@ exports[`static render 1`] = `
         >
           <div
             className="sc-EHOje eoRSaj"
-            style={
-              Object {
-                "borderLeft": undefined,
-              }
-            }
           >
             <div
               className="sc-bZQynM loNdad"
               style={
                 Object {
                   "borderRight": undefined,
-                  "borderTop": undefined,
                 }
               }
             >
@@ -114,7 +116,7 @@ exports[`static render 1`] = `
                 onClick={[Function]}
                 style={
                   Object {
-                    "borderBottom": undefined,
+                    "borderBottom": null,
                   }
                 }
               />
@@ -124,7 +126,6 @@ exports[`static render 1`] = `
               style={
                 Object {
                   "borderRight": undefined,
-                  "borderTop": undefined,
                 }
               }
             >
@@ -151,7 +152,7 @@ exports[`static render 1`] = `
                 onClick={[Function]}
                 style={
                   Object {
-                    "borderBottom": undefined,
+                    "borderBottom": null,
                   }
                 }
               />
@@ -160,8 +161,7 @@ exports[`static render 1`] = `
               className="sc-bZQynM loNdad"
               style={
                 Object {
-                  "borderRight": undefined,
-                  "borderTop": undefined,
+                  "borderRight": null,
                 }
               }
             >
@@ -188,7 +188,7 @@ exports[`static render 1`] = `
                 onClick={[Function]}
                 style={
                   Object {
-                    "borderBottom": undefined,
+                    "borderBottom": null,
                   }
                 }
               />
