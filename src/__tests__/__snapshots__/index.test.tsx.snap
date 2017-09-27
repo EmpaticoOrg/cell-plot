@@ -1,8 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`something 1`] = `
+exports[`static render 1`] = `
 <div
   className="sc-bdVaJa dqbzLu"
+  style={
+    Object {
+      "flex": "1 1 auto",
+    }
+  }
 >
   <div
     className="sc-bwzfXH kulSxP"

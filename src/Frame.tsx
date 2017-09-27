@@ -41,7 +41,7 @@ const StyledSpacer = styled.div`
  */
 const Frame: React.SFC<Props> = (props) => {
   return (
-    <Rows>
+    <Rows style={{flex: '1 1 auto'}}>
       <Columns>
         <StyledSpacer>{props.xLabels[0]}</StyledSpacer>
         {props.yLabels.map((label, idx) =>
