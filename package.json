@@ -1,6 +1,6 @@
 {
   "name": "cell-plot",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "React components for a plottable coordinate plane built with Flexbox cells.",
   "main": "dist/index.main.js",
   "module": "dist/index.module.js",
@@ -16,7 +16,8 @@
     "clean": "rm -rf dist",
     "test": "jest",
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "deploy-storybook": "storybook-to-ghpages"
+    "deploy-storybook": "storybook-to-ghpages",
+    "release": "yarn problems && yarn test && yarn build && yarn deploy-storybook && yarn publish"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.2.11",
