@@ -38,22 +38,14 @@ const Cells: React.SFC<Props> = ({xs, ys, verticalBorders, horizontalBorders, on
         <Column
           key={x}
           style={{
-            borderRight: verticalBorders && (
-              idx !== xs.length - 1 ?
-                verticalBorders[(idx + 1) % verticalBorders.length] :
-                null
-            )
+            borderRight: verticalBorders && verticalBorders[(idx + 1) % verticalBorders.length]
           }}>
           {ys.map((y, idy) => (
             <Cell
               key={y}
               onClick={() => onClick && onClick(x, y)}
               style={{
-                borderBottom: horizontalBorders && (
-                  idy !== ys.length - 1 ?
-                    horizontalBorders[(idy + 1) % horizontalBorders.length] :
-                    null
-                )
+                borderBottom: horizontalBorders && horizontalBorders[(idy + 1) % horizontalBorders.length]
               }} />
           ))}
         </Column>

@@ -37,7 +37,8 @@ const YLabel = Centered.extend`
 const Box = Centered.extend`
   height: calc(100% - 1px);
   width: calc(100% - 1px);
-  margin: auto;
+  margin-right: 1px;
+  margin-bottom: 1px;
   color: white;
   opacity: 0.8;
 `;

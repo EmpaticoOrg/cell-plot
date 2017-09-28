@@ -59,9 +59,7 @@ const Frame: React.SFC<Props> = (props) => {
           </Rows>
           <Fill style={{
             borderTop: props.verticalBorder,
-            borderBottom: props.verticalBorder,
-            borderLeft: props.horizontalBorder,
-            borderRight: props.horizontalBorder
+            borderLeft: props.horizontalBorder
           }}>
             <div
               style={{position: 'relative', flex: '1 1 auto'}}
