@@ -67,9 +67,7 @@ exports[`static render 1`] = `
         className="sc-bxivhb hvlrXC"
         style={
           Object {
-            "borderBottom": undefined,
             "borderLeft": undefined,
-            "borderRight": undefined,
             "borderTop": undefined,
           }
         }
@@ -116,7 +114,7 @@ exports[`static render 1`] = `
                 onClick={[Function]}
                 style={
                   Object {
-                    "borderBottom": null,
+                    "borderBottom": undefined,
                   }
                 }
               />
@@ -152,7 +150,7 @@ exports[`static render 1`] = `
                 onClick={[Function]}
                 style={
                   Object {
-                    "borderBottom": null,
+                    "borderBottom": undefined,
                   }
                 }
               />
@@ -161,7 +159,7 @@ exports[`static render 1`] = `
               className="sc-bZQynM loNdad"
               style={
                 Object {
-                  "borderRight": null,
+                  "borderRight": undefined,
                 }
               }
             >
@@ -188,7 +186,7 @@ exports[`static render 1`] = `
                 onClick={[Function]}
                 style={
                   Object {
-                    "borderBottom": null,
+                    "borderBottom": undefined,
                   }
                 }
               />
