@@ -19,3 +19,46 @@ test('static render', () => {
 
   expect(component.toJSON()).toMatchSnapshot();
 });
+
+describe('layout calculations', () => {
+  test('clamped by top boundary', () => {
+    const component = renderer.create(
+      <CellPlot xs={[3, 4]} ys={[5, 6]}>
+        <Rectangle x={3} y={4} width={2} height={2} />
+      </CellPlot>
+    );
+
+    expect(component.toJSON()).toMatchSnapshot();
+  });
+
+  test('clamped by right boundary', () => {
+    const component = renderer.create(
+      <CellPlot xs={[3, 4]} ys={[5, 6]}>
+        <Rectangle x={4} y={5} width={2} height={2} />
+      </CellPlot>
+    );
+
+    expect(component.toJSON()).toMatchSnapshot();
+  });
+
+  test('clamped by bottom boundary', () => {
+    const component = renderer.create(
+      <CellPlot xs={[3, 4]} ys={[5, 6]}>
+        <Rectangle x={3} y={6} width={2} height={2} />
+      </CellPlot>
+    );
+
+    expect(component.toJSON()).toMatchSnapshot();
+  });
+
+  test('clamped by left boundary', () => {
+    const component = renderer.create(
+      <CellPlot xs={[3, 4]} ys={[5, 6]}>
+        <Rectangle x={2} y={5} width={2} height={2} />
+      </CellPlot>
+    );
+
+    expect(component.toJSON()).toMatchSnapshot();
+  });
+
+});

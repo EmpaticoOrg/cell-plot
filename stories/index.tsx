@@ -49,6 +49,8 @@ function rangeToArray(r: [number, number]): number[] {
 
 storiesOf('CellPlot', module)
   .add('Grid', () => {
+    const xMin = number('xMin', 1, {range: true, min: 0, max: 5, step: 1});
+    const yMin = number('yMin', 1, {range: true, min: 0, max: 5, step: 1});
     const xMax = number('xMax', 6, {range: true, min: 6, max: 20, step: 1});
     const yMax = number('yMax', 6, {range: true, min: 6, max: 20, step: 1});
 
@@ -56,8 +58,8 @@ storiesOf('CellPlot', module)
       <CellPlot
         xLabels={[<XLabel>left</XLabel>, <XLabel>center</XLabel>, <XLabel>right</XLabel>]}
         yLabels={[<YLabel>top</YLabel>, <YLabel>center</YLabel>, <YLabel>bottom</YLabel>]}
-        xs={rangeToArray([1, xMax])}
-        ys={rangeToArray([1, yMax])}
+        xs={rangeToArray([xMin, xMax])}
+        ys={rangeToArray([yMin, yMax])}
         verticalBorders={['1px solid #555', '1px dotted #ccc']}
         horizontalBorders={['1px solid #555', '1px dotted #ccc']}
         onClick={action('onClick')}>
