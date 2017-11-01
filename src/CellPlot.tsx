@@ -6,11 +6,11 @@ import {PlotContext, PlotContextProps} from './PlotContext';
 import {PlotConsumer, PlotConsumerProps} from './PlotConsumer';
 
 export interface Props {
-  xLabels: React.ReactNode[];
+  xLabels?: React.ReactNode[];
   verticalBorders?: string[]; // a cyclic sequence of strings for the css border property
   xs: number[];
 
-  yLabels: React.ReactNode[];
+  yLabels?: React.ReactNode[];
   horizontalBorders?: string[]; // a cyclic sequence of strings for the css border property
   ys: number[];
 
@@ -80,8 +80,8 @@ export default class CellPlot extends React.Component<Props> {
     return (
       <Frame
         innerRef={(el) => this.el = el}
-        xLabels={this.props.xLabels}
-        yLabels={this.props.yLabels}
+        xLabels={this.props.xLabels || []}
+        yLabels={this.props.yLabels || []}
         verticalBorder={this.props.verticalBorders && this.props.verticalBorders[0]}
         horizontalBorder={this.props.horizontalBorders && this.props.horizontalBorders[0]}>
 
