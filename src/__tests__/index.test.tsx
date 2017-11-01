@@ -21,6 +21,46 @@ test('static render', () => {
 });
 
 describe('layout calculations', () => {
+  test('too far above', () => {
+    const component = renderer.create(
+      <CellPlot xs={[3, 4]} ys={[5, 6]}>
+        <Rectangle x={3} y={4} width={1} height={1} />
+      </CellPlot>
+    );
+
+    expect(component.toJSON()).toMatchSnapshot();
+  });
+
+  test('too far right', () => {
+    const component = renderer.create(
+      <CellPlot xs={[3, 4]} ys={[5, 6]}>
+        <Rectangle x={5} y={5} width={1} height={1} />
+      </CellPlot>
+    );
+
+    expect(component.toJSON()).toMatchSnapshot();
+  });
+
+  test('too far below', () => {
+    const component = renderer.create(
+      <CellPlot xs={[3, 4]} ys={[5, 6]}>
+        <Rectangle x={3} y={7} width={1} height={1} />
+      </CellPlot>
+    );
+
+    expect(component.toJSON()).toMatchSnapshot();
+  });
+
+  test('too far left', () => {
+    const component = renderer.create(
+      <CellPlot xs={[3, 4]} ys={[5, 6]}>
+        <Rectangle x={2} y={5} width={1} height={1} />
+      </CellPlot>
+    );
+
+    expect(component.toJSON()).toMatchSnapshot();
+  });
+
   test('clamped by top boundary', () => {
     const component = renderer.create(
       <CellPlot xs={[3, 4]} ys={[5, 6]}>

@@ -26,6 +26,16 @@ export default class Rectangle extends React.Component<Props & React.HTMLAttribu
   render() {
     const {x, y, height, width, style, ...remaining} = this.props;
 
+    // invisible, don't render
+    if (
+      x > this.context.gridXMax ||
+      y > this.context.gridYMax ||
+      x + (typeof width === 'string' ? 0 : width) <= this.context.gridXMin ||
+      y + (typeof height === 'string' ? 0 : height) <= this.context.gridYMin
+    ) {
+      return null;
+    }
+
     // calculate clamped coordinates
     const left = Math.max(x, this.context.gridXMin);
     const right = typeof width === 'string' ? x : Math.min(x + width, this.context.gridXMax + this.context.gridXStep);
