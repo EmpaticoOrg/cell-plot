@@ -1,18 +1,22 @@
 export interface PlotContext {
   gridXMin: number;
-  gridXUnits: number;
+  gridXMax: number;
   gridXStep: number;
+  gridXRange: number;
   gridYMin: number;
-  gridYUnits: number;
+  gridYMax: number;
   gridYStep: number;
+  gridYRange: number;
 }
 
 const fakePropType: any = () => null;
 export const PlotContextProps = {
   gridXMin: fakePropType,
-  gridXUnits: fakePropType,
+  gridXMax: fakePropType,
   gridXStep: fakePropType,
+  gridXRange: fakePropType,
   gridYMin: fakePropType,
-  gridYUnits: fakePropType,
+  gridYMax: fakePropType,
   gridYStep: fakePropType,
+  gridYRange: fakePropType
 };

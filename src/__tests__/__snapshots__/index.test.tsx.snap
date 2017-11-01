@@ -1,5 +1,945 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`layout calculations clamped by bottom boundary 1`] = `
+<div
+  className="sc-bdVaJa dqbzLu"
+  style={
+    Object {
+      "flex": "1 1 auto",
+    }
+  }
+>
+  <div
+    className="sc-bwzfXH kulSxP"
+  >
+    <div
+      className="sc-ifAKCX eYukKq"
+    />
+  </div>
+  <div
+    className="sc-bxivhb hvlrXC"
+  >
+    <div
+      className="sc-bwzfXH kulSxP"
+      style={
+        Object {
+          "flex": "1 1 auto",
+        }
+      }
+    >
+      <div
+        className="sc-bdVaJa dqbzLu"
+      />
+      <div
+        className="sc-bxivhb hvlrXC"
+        style={
+          Object {
+            "borderLeft": undefined,
+            "borderTop": undefined,
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "flex": "1 1 auto",
+              "position": "relative",
+            }
+          }
+        >
+          <div
+            className="sc-EHOje eoRSaj"
+          >
+            <div
+              className="sc-bZQynM loNdad"
+              style={
+                Object {
+                  "borderRight": undefined,
+                }
+              }
+            >
+              <div
+                className="sc-gzVnrw gfFhBZ"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderBottom": undefined,
+                  }
+                }
+              />
+              <div
+                className="sc-gzVnrw gfFhBZ"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderBottom": undefined,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="sc-bZQynM loNdad"
+              style={
+                Object {
+                  "borderRight": undefined,
+                }
+              }
+            >
+              <div
+                className="sc-gzVnrw gfFhBZ"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderBottom": undefined,
+                  }
+                }
+              />
+              <div
+                className="sc-gzVnrw gfFhBZ"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderBottom": undefined,
+                  }
+                }
+              />
+            </div>
+          </div>
+          <div
+            className="sc-htoDjs btzGSf"
+            style={
+              Object {
+                "height": "50%",
+                "left": "0%",
+                "top": "50%",
+                "width": "100%",
+              }
+            }
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`layout calculations clamped by left boundary 1`] = `
+<div
+  className="sc-bdVaJa dqbzLu"
+  style={
+    Object {
+      "flex": "1 1 auto",
+    }
+  }
+>
+  <div
+    className="sc-bwzfXH kulSxP"
+  >
+    <div
+      className="sc-ifAKCX eYukKq"
+    />
+  </div>
+  <div
+    className="sc-bxivhb hvlrXC"
+  >
+    <div
+      className="sc-bwzfXH kulSxP"
+      style={
+        Object {
+          "flex": "1 1 auto",
+        }
+      }
+    >
+      <div
+        className="sc-bdVaJa dqbzLu"
+      />
+      <div
+        className="sc-bxivhb hvlrXC"
+        style={
+          Object {
+            "borderLeft": undefined,
+            "borderTop": undefined,
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "flex": "1 1 auto",
+              "position": "relative",
+            }
+          }
+        >
+          <div
+            className="sc-EHOje eoRSaj"
+          >
+            <div
+              className="sc-bZQynM loNdad"
+              style={
+                Object {
+                  "borderRight": undefined,
+                }
+              }
+            >
+              <div
+                className="sc-gzVnrw gfFhBZ"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderBottom": undefined,
+                  }
+                }
+              />
+              <div
+                className="sc-gzVnrw gfFhBZ"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderBottom": undefined,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="sc-bZQynM loNdad"
+              style={
+                Object {
+                  "borderRight": undefined,
+                }
+              }
+            >
+              <div
+                className="sc-gzVnrw gfFhBZ"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderBottom": undefined,
+                  }
+                }
+              />
+              <div
+                className="sc-gzVnrw gfFhBZ"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderBottom": undefined,
+                  }
+                }
+              />
+            </div>
+          </div>
+          <div
+            className="sc-htoDjs btzGSf"
+            style={
+              Object {
+                "height": "100%",
+                "left": "0%",
+                "top": "0%",
+                "width": "50%",
+              }
+            }
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`layout calculations clamped by right boundary 1`] = `
+<div
+  className="sc-bdVaJa dqbzLu"
+  style={
+    Object {
+      "flex": "1 1 auto",
+    }
+  }
+>
+  <div
+    className="sc-bwzfXH kulSxP"
+  >
+    <div
+      className="sc-ifAKCX eYukKq"
+    />
+  </div>
+  <div
+    className="sc-bxivhb hvlrXC"
+  >
+    <div
+      className="sc-bwzfXH kulSxP"
+      style={
+        Object {
+          "flex": "1 1 auto",
+        }
+      }
+    >
+      <div
+        className="sc-bdVaJa dqbzLu"
+      />
+      <div
+        className="sc-bxivhb hvlrXC"
+        style={
+          Object {
+            "borderLeft": undefined,
+            "borderTop": undefined,
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "flex": "1 1 auto",
+              "position": "relative",
+            }
+          }
+        >
+          <div
+            className="sc-EHOje eoRSaj"
+          >
+            <div
+              className="sc-bZQynM loNdad"
+              style={
+                Object {
+                  "borderRight": undefined,
+                }
+              }
+            >
+              <div
+                className="sc-gzVnrw gfFhBZ"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderBottom": undefined,
+                  }
+                }
+              />
+              <div
+                className="sc-gzVnrw gfFhBZ"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderBottom": undefined,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="sc-bZQynM loNdad"
+              style={
+                Object {
+                  "borderRight": undefined,
+                }
+              }
+            >
+              <div
+                className="sc-gzVnrw gfFhBZ"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderBottom": undefined,
+                  }
+                }
+              />
+              <div
+                className="sc-gzVnrw gfFhBZ"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderBottom": undefined,
+                  }
+                }
+              />
+            </div>
+          </div>
+          <div
+            className="sc-htoDjs btzGSf"
+            style={
+              Object {
+                "height": "100%",
+                "left": "50%",
+                "top": "0%",
+                "width": "50%",
+              }
+            }
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`layout calculations clamped by top boundary 1`] = `
+<div
+  className="sc-bdVaJa dqbzLu"
+  style={
+    Object {
+      "flex": "1 1 auto",
+    }
+  }
+>
+  <div
+    className="sc-bwzfXH kulSxP"
+  >
+    <div
+      className="sc-ifAKCX eYukKq"
+    />
+  </div>
+  <div
+    className="sc-bxivhb hvlrXC"
+  >
+    <div
+      className="sc-bwzfXH kulSxP"
+      style={
+        Object {
+          "flex": "1 1 auto",
+        }
+      }
+    >
+      <div
+        className="sc-bdVaJa dqbzLu"
+      />
+      <div
+        className="sc-bxivhb hvlrXC"
+        style={
+          Object {
+            "borderLeft": undefined,
+            "borderTop": undefined,
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "flex": "1 1 auto",
+              "position": "relative",
+            }
+          }
+        >
+          <div
+            className="sc-EHOje eoRSaj"
+          >
+            <div
+              className="sc-bZQynM loNdad"
+              style={
+                Object {
+                  "borderRight": undefined,
+                }
+              }
+            >
+              <div
+                className="sc-gzVnrw gfFhBZ"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderBottom": undefined,
+                  }
+                }
+              />
+              <div
+                className="sc-gzVnrw gfFhBZ"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderBottom": undefined,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="sc-bZQynM loNdad"
+              style={
+                Object {
+                  "borderRight": undefined,
+                }
+              }
+            >
+              <div
+                className="sc-gzVnrw gfFhBZ"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderBottom": undefined,
+                  }
+                }
+              />
+              <div
+                className="sc-gzVnrw gfFhBZ"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderBottom": undefined,
+                  }
+                }
+              />
+            </div>
+          </div>
+          <div
+            className="sc-htoDjs btzGSf"
+            style={
+              Object {
+                "height": "50%",
+                "left": "0%",
+                "top": "0%",
+                "width": "100%",
+              }
+            }
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`layout calculations too far above 1`] = `
+<div
+  className="sc-bdVaJa dqbzLu"
+  style={
+    Object {
+      "flex": "1 1 auto",
+    }
+  }
+>
+  <div
+    className="sc-bwzfXH kulSxP"
+  >
+    <div
+      className="sc-ifAKCX eYukKq"
+    />
+  </div>
+  <div
+    className="sc-bxivhb hvlrXC"
+  >
+    <div
+      className="sc-bwzfXH kulSxP"
+      style={
+        Object {
+          "flex": "1 1 auto",
+        }
+      }
+    >
+      <div
+        className="sc-bdVaJa dqbzLu"
+      />
+      <div
+        className="sc-bxivhb hvlrXC"
+        style={
+          Object {
+            "borderLeft": undefined,
+            "borderTop": undefined,
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "flex": "1 1 auto",
+              "position": "relative",
+            }
+          }
+        >
+          <div
+            className="sc-EHOje eoRSaj"
+          >
+            <div
+              className="sc-bZQynM loNdad"
+              style={
+                Object {
+                  "borderRight": undefined,
+                }
+              }
+            >
+              <div
+                className="sc-gzVnrw gfFhBZ"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderBottom": undefined,
+                  }
+                }
+              />
+              <div
+                className="sc-gzVnrw gfFhBZ"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderBottom": undefined,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="sc-bZQynM loNdad"
+              style={
+                Object {
+                  "borderRight": undefined,
+                }
+              }
+            >
+              <div
+                className="sc-gzVnrw gfFhBZ"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderBottom": undefined,
+                  }
+                }
+              />
+              <div
+                className="sc-gzVnrw gfFhBZ"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderBottom": undefined,
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`layout calculations too far below 1`] = `
+<div
+  className="sc-bdVaJa dqbzLu"
+  style={
+    Object {
+      "flex": "1 1 auto",
+    }
+  }
+>
+  <div
+    className="sc-bwzfXH kulSxP"
+  >
+    <div
+      className="sc-ifAKCX eYukKq"
+    />
+  </div>
+  <div
+    className="sc-bxivhb hvlrXC"
+  >
+    <div
+      className="sc-bwzfXH kulSxP"
+      style={
+        Object {
+          "flex": "1 1 auto",
+        }
+      }
+    >
+      <div
+        className="sc-bdVaJa dqbzLu"
+      />
+      <div
+        className="sc-bxivhb hvlrXC"
+        style={
+          Object {
+            "borderLeft": undefined,
+            "borderTop": undefined,
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "flex": "1 1 auto",
+              "position": "relative",
+            }
+          }
+        >
+          <div
+            className="sc-EHOje eoRSaj"
+          >
+            <div
+              className="sc-bZQynM loNdad"
+              style={
+                Object {
+                  "borderRight": undefined,
+                }
+              }
+            >
+              <div
+                className="sc-gzVnrw gfFhBZ"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderBottom": undefined,
+                  }
+                }
+              />
+              <div
+                className="sc-gzVnrw gfFhBZ"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderBottom": undefined,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="sc-bZQynM loNdad"
+              style={
+                Object {
+                  "borderRight": undefined,
+                }
+              }
+            >
+              <div
+                className="sc-gzVnrw gfFhBZ"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderBottom": undefined,
+                  }
+                }
+              />
+              <div
+                className="sc-gzVnrw gfFhBZ"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderBottom": undefined,
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`layout calculations too far left 1`] = `
+<div
+  className="sc-bdVaJa dqbzLu"
+  style={
+    Object {
+      "flex": "1 1 auto",
+    }
+  }
+>
+  <div
+    className="sc-bwzfXH kulSxP"
+  >
+    <div
+      className="sc-ifAKCX eYukKq"
+    />
+  </div>
+  <div
+    className="sc-bxivhb hvlrXC"
+  >
+    <div
+      className="sc-bwzfXH kulSxP"
+      style={
+        Object {
+          "flex": "1 1 auto",
+        }
+      }
+    >
+      <div
+        className="sc-bdVaJa dqbzLu"
+      />
+      <div
+        className="sc-bxivhb hvlrXC"
+        style={
+          Object {
+            "borderLeft": undefined,
+            "borderTop": undefined,
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "flex": "1 1 auto",
+              "position": "relative",
+            }
+          }
+        >
+          <div
+            className="sc-EHOje eoRSaj"
+          >
+            <div
+              className="sc-bZQynM loNdad"
+              style={
+                Object {
+                  "borderRight": undefined,
+                }
+              }
+            >
+              <div
+                className="sc-gzVnrw gfFhBZ"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderBottom": undefined,
+                  }
+                }
+              />
+              <div
+                className="sc-gzVnrw gfFhBZ"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderBottom": undefined,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="sc-bZQynM loNdad"
+              style={
+                Object {
+                  "borderRight": undefined,
+                }
+              }
+            >
+              <div
+                className="sc-gzVnrw gfFhBZ"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderBottom": undefined,
+                  }
+                }
+              />
+              <div
+                className="sc-gzVnrw gfFhBZ"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderBottom": undefined,
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`layout calculations too far right 1`] = `
+<div
+  className="sc-bdVaJa dqbzLu"
+  style={
+    Object {
+      "flex": "1 1 auto",
+    }
+  }
+>
+  <div
+    className="sc-bwzfXH kulSxP"
+  >
+    <div
+      className="sc-ifAKCX eYukKq"
+    />
+  </div>
+  <div
+    className="sc-bxivhb hvlrXC"
+  >
+    <div
+      className="sc-bwzfXH kulSxP"
+      style={
+        Object {
+          "flex": "1 1 auto",
+        }
+      }
+    >
+      <div
+        className="sc-bdVaJa dqbzLu"
+      />
+      <div
+        className="sc-bxivhb hvlrXC"
+        style={
+          Object {
+            "borderLeft": undefined,
+            "borderTop": undefined,
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "flex": "1 1 auto",
+              "position": "relative",
+            }
+          }
+        >
+          <div
+            className="sc-EHOje eoRSaj"
+          >
+            <div
+              className="sc-bZQynM loNdad"
+              style={
+                Object {
+                  "borderRight": undefined,
+                }
+              }
+            >
+              <div
+                className="sc-gzVnrw gfFhBZ"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderBottom": undefined,
+                  }
+                }
+              />
+              <div
+                className="sc-gzVnrw gfFhBZ"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderBottom": undefined,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="sc-bZQynM loNdad"
+              style={
+                Object {
+                  "borderRight": undefined,
+                }
+              }
+            >
+              <div
+                className="sc-gzVnrw gfFhBZ"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderBottom": undefined,
+                  }
+                }
+              />
+              <div
+                className="sc-gzVnrw gfFhBZ"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderBottom": undefined,
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`static render 1`] = `
 <div
   className="sc-bdVaJa dqbzLu"

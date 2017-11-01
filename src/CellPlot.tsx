@@ -38,42 +38,44 @@ export default class CellPlot extends React.Component<Props> {
   el: HTMLElement;
 
   getChildContext(): PlotContext & PlotConsumer {
+    const gridYMin = this.props.ys[0];
+    const gridYMax = this.props.ys[this.props.ys.length - 1];
+    const gridYStep = this.props.ys[1] ? this.props.ys[1] - gridYMin : 1;
+    const gridYRange = gridYMax - gridYMin + gridYStep;
+
+    const gridXMin = this.props.xs[0];
+    const gridXMax = this.props.xs[this.props.xs.length - 1];
+    const gridXStep = this.props.xs[1] ? this.props.xs[1] - gridXMin : 1;
+    const gridXRange = gridXMax - gridXMin + gridXStep;
+
     return {
-      gridXMin: this.props.xs[0],
-      gridXUnits: this.props.xs.length,
-      gridXStep: this.props.xs[1] ? this.props.xs[1] - this.props.xs[0] : 1,
-      gridYMin: this.props.ys[0],
-      gridYUnits: this.props.ys.length,
-      gridYStep: this.props.ys[1] ? this.props.ys[1] - this.props.ys[0] : 1,
-      yAt: this.yAt.bind(this),
-      xAt: this.xAt.bind(this)
+      gridXMin,
+      gridXMax,
+      gridXStep,
+      gridXRange: gridXMax - gridXMin + gridXStep,
+      gridYMin,
+      gridYMax,
+      gridYStep,
+      gridYRange: gridYMax - gridYMin + gridYStep,
+      yAt: (pxY: number): number => {
+        const pxPerY = this.el.offsetHeight / gridYRange;
+        return Math.round(
+          clamp(
+            snap(pxY / pxPerY + gridYMin, gridYStep),
+            {min: gridYMin, max: gridYMax + gridYStep}
+          )
+        );
+      },
+      xAt: (pxX: number): number => {
+        const pxPerX = this.el.offsetWidth / gridXRange;
+        return Math.round(
+          clamp(
+            snap(pxX / pxPerX + gridXMin, gridYStep),
+            {min: gridXMin, max: gridXMax + gridXStep}
+          )
+        );
+      }
     };
-  }
-
-  /**
-   * Converts pixel units to whatever unit the grid is in. Exposed through the PlotConsumer context.
-   */
-  yAt(pxY: number): number {
-    const yMax = this.props.ys[this.props.ys.length - 1];
-    const yMin = this.props.ys[0];
-    const yStep = this.props.ys[1] - this.props.ys[0];
-    const yRange = yMax - yMin + 1;
-    const pxPerY = this.el.offsetHeight / yRange;
-
-    return Math.round(clamp(snap(pxY / pxPerY + yMin, yStep), {min: yMin, max: yMax + yStep}));
-  }
-
-  /**
-   * Converts pixel units to whatever unit the grid is in. Exposed through the PlotConsumer context.
-   */
-  xAt(pxX: number): number {
-    const xMax = this.props.xs[this.props.xs.length - 1];
-    const xMin = this.props.xs[0];
-    const xStep = this.props.xs[1] - this.props.xs[0];
-    const xRange = xMax - xMin + 1;
-    const pxPerX = this.el.offsetWidth / xRange;
-
-    return Math.round(clamp(snap(pxX / pxPerX + xMin, xStep), {min: xMin, max: xMax}));
   }
 
   render() {

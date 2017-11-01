@@ -15,54 +15,51 @@ const Container = styled.div`
   position: absolute;
 `;
 
+function pct(decimal: number): string {
+  return `${decimal * 100}%`;
+}
+
 export default class Rectangle extends React.Component<Props & React.HTMLAttributes<HTMLDivElement>> {
   static contextTypes = PlotContextProps;
   context: PlotContext;
 
-  top(): string {
-    const yCount = (this.context.gridYUnits * this.context.gridYStep);
-    const top = (this.props.y - this.context.gridYMin) / yCount;
-    return `${top * 100}%`;
-  }
-
-  left(): string {
-    const xCount = (this.context.gridXUnits * this.context.gridXStep);
-    const left = (this.props.x - this.context.gridXMin) / xCount;
-    return `${left * 100}%`;
-  }
-
-  height(): string {
-    if (typeof this.props.height === 'string') {
-      return this.props.height;
-    } else {
-      const yCount = (this.context.gridYUnits * this.context.gridYStep);
-      const pct = this.props.height / yCount;
-      return `${pct * 100}%`;
-    }
-  }
-
-  width(): string {
-    if (typeof this.props.width === 'string') {
-      return this.props.width;
-    } else {
-      const xCount = (this.context.gridXUnits * this.context.gridXStep);
-      const pct = this.props.width / xCount;
-      return `${pct * 100}%`;
-    }
-  }
-
   render() {
     const {x, y, height, width, style, ...remaining} = this.props;
-    x; y; height; width; // tslint:disable-line
 
-    // provided styles override calculated styles. power to the people!
-    const mergedStyles = {
-      width: this.width(),
-      height: this.height(),
-      top: this.top(),
-      left: this.left(),
-      ...style
+    // invisible, don't render
+    if (
+      x > this.context.gridXMax ||
+      y > this.context.gridYMax ||
+      x + (typeof width === 'string' ? 0 : width) <= this.context.gridXMin ||
+      y + (typeof height === 'string' ? 0 : height) <= this.context.gridYMin
+    ) {
+      return null;
+    }
+
+    // calculate clamped coordinates
+    const left = Math.max(x, this.context.gridXMin);
+    const right = typeof width === 'string' ? x : Math.min(x + width, this.context.gridXMax + this.context.gridXStep);
+    const top = Math.max(y, this.context.gridYMin);
+    const bottom = typeof height === 'string' ? y : Math.min(y + height, this.context.gridYMax + this.context.gridYStep);
+
+    // layout styles
+    const layout = {
+      top: pct((top - this.context.gridYMin) / this.context.gridYRange),
+      left: pct((left - this.context.gridXMin) / this.context.gridXRange),
+      height: typeof height === 'string'
+        ? height
+        : pct(Math.min(1, (bottom - top) / this.context.gridYRange)),
+      width: typeof width === 'string'
+        ? width
+        : pct(Math.min(1, (right - left) / this.context.gridXRange))
     };
-    return <Container {...remaining} style={mergedStyles} />;
+
+    if (layout.height === '0%') {
+      console.log(y, height);
+      console.log(bottom, top);
+    }
+
+    // provided styles override calculated styles.
+    return <Container {...remaining} style={{...layout, ...style}} />;
   }
 }
