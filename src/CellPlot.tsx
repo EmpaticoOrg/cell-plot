@@ -70,7 +70,7 @@ export default class CellPlot extends React.Component<Props> {
         const pxPerX = this.el.offsetWidth / gridXRange;
         return Math.round(
           clamp(
-            snap(pxX / pxPerX + gridXMin, gridYStep),
+            snap(pxX / pxPerX + gridXMin, gridXStep),
             {min: gridXMin, max: gridXMax + gridXStep}
           )
         );
