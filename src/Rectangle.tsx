@@ -33,7 +33,7 @@ export default class Rectangle extends React.Component<Props & React.HTMLAttribu
       x + (typeof width === 'string' ? 0 : width) <= this.context.gridXMin ||
       y + (typeof height === 'string' ? 0 : height) <= this.context.gridYMin
     ) {
-      return null;
+      return <span />;
     }
 
     // calculate clamped coordinates
@@ -53,11 +53,6 @@ export default class Rectangle extends React.Component<Props & React.HTMLAttribu
         ? width
         : pct(Math.min(1, (right - left) / this.context.gridXRange))
     };
-
-    if (layout.height === '0%') {
-      console.log(y, height);
-      console.log(bottom, top);
-    }
 
     // provided styles override calculated styles.
     return <Container {...remaining} style={{...layout, ...style}} />;

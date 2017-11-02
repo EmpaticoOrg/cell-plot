@@ -597,6 +597,7 @@ exports[`layout calculations too far above 1`] = `
               />
             </div>
           </div>
+          <span />
         </div>
       </div>
     </div>
@@ -709,6 +710,7 @@ exports[`layout calculations too far below 1`] = `
               />
             </div>
           </div>
+          <span />
         </div>
       </div>
     </div>
@@ -821,6 +823,7 @@ exports[`layout calculations too far left 1`] = `
               />
             </div>
           </div>
+          <span />
         </div>
       </div>
     </div>
@@ -933,6 +936,7 @@ exports[`layout calculations too far right 1`] = `
               />
             </div>
           </div>
+          <span />
         </div>
       </div>
     </div>
