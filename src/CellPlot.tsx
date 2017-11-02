@@ -62,7 +62,7 @@ export default class CellPlot extends React.Component<Props> {
         return Math.round(
           clamp(
             snap(pxY / pxPerY + gridYMin, gridYStep),
-            {min: gridYMin, max: gridYMax + gridYStep}
+            {min: gridYMin, max: gridYMax}
           )
         );
       },
@@ -71,7 +71,7 @@ export default class CellPlot extends React.Component<Props> {
         return Math.round(
           clamp(
             snap(pxX / pxPerX + gridXMin, gridXStep),
-            {min: gridXMin, max: gridXMax + gridXStep}
+            {min: gridXMin, max: gridXMax}
           )
         );
       }
