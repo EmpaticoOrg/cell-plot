@@ -1,6 +1,6 @@
 {
   "name": "cell-plot",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "React components for a plottable coordinate plane built with Flexbox cells.",
   "main": "dist/index.main.js",
   "module": "dist/index.module.js",
