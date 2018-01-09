@@ -8,6 +8,7 @@ export interface Props {
   y: number;
   width: number | string;
   height: number | string;
+  onHover?: (hovering: boolean) => void;
 }
 
 const Container = styled.div`
@@ -24,7 +25,7 @@ export default class Rectangle extends React.Component<Props & React.HTMLAttribu
   context: PlotContext;
 
   render() {
-    const {x, y, height, width, style, ...remaining} = this.props;
+    const {x, y, height, width, style, onHover, ...remaining} = this.props;
 
     // invisible, don't render
     if (
@@ -55,6 +56,12 @@ export default class Rectangle extends React.Component<Props & React.HTMLAttribu
     };
 
     // provided styles override calculated styles.
-    return <Container {...remaining} style={{...layout, ...style}} />;
+    return <Container
+      onMouseEnter={() => onHover && onHover(true)}
+      onMouseOver={() => onHover && onHover(true)}
+      onMouseLeave={() => onHover && onHover(false)}
+      {...remaining}
+      style={{...layout, ...style}}
+    />;
   }
 }

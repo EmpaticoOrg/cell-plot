@@ -10,6 +10,7 @@ const teal = '#58A9A3';
 const gold = '#CEB471';
 const blue = '#53697D';
 const red = '#F7846B';
+const highlight = '#DDDD00';
 
 const Container = styled.div`
   width: 300px;
@@ -55,7 +56,11 @@ interface DemoProps {
 }
 
 interface DemoState {
-  hovering: Coordinate | null;
+  cellHover: Coordinate | null;
+  rectangleHoverEast: boolean;
+  rectangleHoverWest: boolean;
+  rectangleHoverNorth: boolean;
+  rectangleHoverSouth: boolean;
 }
 
 class Demo extends React.Component<DemoProps, DemoState> {
@@ -63,7 +68,11 @@ class Demo extends React.Component<DemoProps, DemoState> {
     super(props);
 
     this.state = {
-      hovering: null
+      cellHover: null,
+      rectangleHoverEast: false,
+      rectangleHoverWest: false,
+      rectangleHoverNorth: false,
+      rectangleHoverSouth: false
     };
   }
 
@@ -77,25 +86,33 @@ class Demo extends React.Component<DemoProps, DemoState> {
         verticalBorders={['1px solid #555', '1px dotted #ccc']}
         horizontalBorders={['1px solid #555', '1px dotted #ccc']}
         onClick={action('onClick')}
-        onHover={(coord) => this.setState({hovering: coord})}>
+        onHover={(coord) => this.setState({cellHover: coord})}>
 
-        {this.state.hovering &&
-          <Rectangle style={{zIndex: 1, pointerEvents: 'none'}} x={this.state.hovering.x} y={this.state.hovering.y} width={1} height={1}>
-            <Box style={{backgroundColor: 'yellow'}}></Box>
+        {this.state.cellHover &&
+          <Rectangle style={{zIndex: 1, pointerEvents: 'none'}} x={this.state.cellHover.x} y={this.state.cellHover.y} width={1} height={1}>
+            <Box style={{backgroundColor: highlight}}></Box>
           </Rectangle>
         }
 
-        <Rectangle x={5} y={3} width={2} height={2}>
-          <Box style={{backgroundColor: teal}}>East</Box>
+        <Rectangle x={5} y={3} width={2} height={2} onHover={(hovering: boolean) => this.setState({rectangleHoverEast: hovering})}>
+          <Box style={{backgroundColor: this.state.rectangleHoverEast ? highlight : teal}}>
+            East
+          </Box>
         </Rectangle>
-        <Rectangle x={3} y={5} width={2} height={2}>
-          <Box style={{backgroundColor: red}}>South</Box>
+        <Rectangle x={3} y={5} width={2} height={2} onHover={(hovering: boolean) => this.setState({rectangleHoverSouth: hovering})}>
+          <Box style={{backgroundColor: this.state.rectangleHoverSouth ? highlight : red}}>
+            South
+          </Box>
         </Rectangle>
-        <Rectangle x={1} y={3} width={2} height={2}>
-          <Box style={{backgroundColor: gold}}>West</Box>
+        <Rectangle x={1} y={3} width={2} height={2} onHover={(hovering: boolean) => this.setState({rectangleHoverWest: hovering})}>
+          <Box style={{backgroundColor: this.state.rectangleHoverWest ? highlight : gold}}>
+            West
+          </Box>
         </Rectangle>
-        <Rectangle x={3} y={1} width={2} height={2}>
-          <Box style={{backgroundColor: blue}}>North</Box>
+        <Rectangle x={3} y={1} width={2} height={2} onHover={(hovering: boolean) => this.setState({rectangleHoverNorth: hovering})}>
+          <Box style={{backgroundColor: this.state.rectangleHoverNorth ? highlight : blue}}>
+            North
+          </Box>
         </Rectangle>
       </CellPlot>
     </Container>;
