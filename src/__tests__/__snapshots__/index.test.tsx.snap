@@ -61,6 +61,9 @@ exports[`layout calculations clamped by bottom boundary 1`] = `
               <div
                 className="sc-gzVnrw gfFhBZ"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 style={
                   Object {
                     "borderBottom": undefined,
@@ -70,6 +73,9 @@ exports[`layout calculations clamped by bottom boundary 1`] = `
               <div
                 className="sc-gzVnrw gfFhBZ"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 style={
                   Object {
                     "borderBottom": undefined,
@@ -88,6 +94,9 @@ exports[`layout calculations clamped by bottom boundary 1`] = `
               <div
                 className="sc-gzVnrw gfFhBZ"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 style={
                   Object {
                     "borderBottom": undefined,
@@ -97,6 +106,9 @@ exports[`layout calculations clamped by bottom boundary 1`] = `
               <div
                 className="sc-gzVnrw gfFhBZ"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 style={
                   Object {
                     "borderBottom": undefined,
@@ -107,6 +119,9 @@ exports[`layout calculations clamped by bottom boundary 1`] = `
           </div>
           <div
             className="sc-htoDjs btzGSf"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
             style={
               Object {
                 "height": "50%",
@@ -184,6 +199,9 @@ exports[`layout calculations clamped by left boundary 1`] = `
               <div
                 className="sc-gzVnrw gfFhBZ"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 style={
                   Object {
                     "borderBottom": undefined,
@@ -193,6 +211,9 @@ exports[`layout calculations clamped by left boundary 1`] = `
               <div
                 className="sc-gzVnrw gfFhBZ"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 style={
                   Object {
                     "borderBottom": undefined,
@@ -211,6 +232,9 @@ exports[`layout calculations clamped by left boundary 1`] = `
               <div
                 className="sc-gzVnrw gfFhBZ"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 style={
                   Object {
                     "borderBottom": undefined,
@@ -220,6 +244,9 @@ exports[`layout calculations clamped by left boundary 1`] = `
               <div
                 className="sc-gzVnrw gfFhBZ"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 style={
                   Object {
                     "borderBottom": undefined,
@@ -230,6 +257,9 @@ exports[`layout calculations clamped by left boundary 1`] = `
           </div>
           <div
             className="sc-htoDjs btzGSf"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
             style={
               Object {
                 "height": "100%",
@@ -307,6 +337,9 @@ exports[`layout calculations clamped by right boundary 1`] = `
               <div
                 className="sc-gzVnrw gfFhBZ"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 style={
                   Object {
                     "borderBottom": undefined,
@@ -316,6 +349,9 @@ exports[`layout calculations clamped by right boundary 1`] = `
               <div
                 className="sc-gzVnrw gfFhBZ"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 style={
                   Object {
                     "borderBottom": undefined,
@@ -334,6 +370,9 @@ exports[`layout calculations clamped by right boundary 1`] = `
               <div
                 className="sc-gzVnrw gfFhBZ"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 style={
                   Object {
                     "borderBottom": undefined,
@@ -343,6 +382,9 @@ exports[`layout calculations clamped by right boundary 1`] = `
               <div
                 className="sc-gzVnrw gfFhBZ"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 style={
                   Object {
                     "borderBottom": undefined,
@@ -353,6 +395,9 @@ exports[`layout calculations clamped by right boundary 1`] = `
           </div>
           <div
             className="sc-htoDjs btzGSf"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
             style={
               Object {
                 "height": "100%",
@@ -430,6 +475,9 @@ exports[`layout calculations clamped by top boundary 1`] = `
               <div
                 className="sc-gzVnrw gfFhBZ"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 style={
                   Object {
                     "borderBottom": undefined,
@@ -439,6 +487,9 @@ exports[`layout calculations clamped by top boundary 1`] = `
               <div
                 className="sc-gzVnrw gfFhBZ"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 style={
                   Object {
                     "borderBottom": undefined,
@@ -457,6 +508,9 @@ exports[`layout calculations clamped by top boundary 1`] = `
               <div
                 className="sc-gzVnrw gfFhBZ"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 style={
                   Object {
                     "borderBottom": undefined,
@@ -466,6 +520,9 @@ exports[`layout calculations clamped by top boundary 1`] = `
               <div
                 className="sc-gzVnrw gfFhBZ"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 style={
                   Object {
                     "borderBottom": undefined,
@@ -476,6 +533,9 @@ exports[`layout calculations clamped by top boundary 1`] = `
           </div>
           <div
             className="sc-htoDjs btzGSf"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
             style={
               Object {
                 "height": "50%",
@@ -553,6 +613,9 @@ exports[`layout calculations too far above 1`] = `
               <div
                 className="sc-gzVnrw gfFhBZ"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 style={
                   Object {
                     "borderBottom": undefined,
@@ -562,6 +625,9 @@ exports[`layout calculations too far above 1`] = `
               <div
                 className="sc-gzVnrw gfFhBZ"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 style={
                   Object {
                     "borderBottom": undefined,
@@ -580,6 +646,9 @@ exports[`layout calculations too far above 1`] = `
               <div
                 className="sc-gzVnrw gfFhBZ"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 style={
                   Object {
                     "borderBottom": undefined,
@@ -589,6 +658,9 @@ exports[`layout calculations too far above 1`] = `
               <div
                 className="sc-gzVnrw gfFhBZ"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 style={
                   Object {
                     "borderBottom": undefined,
@@ -666,6 +738,9 @@ exports[`layout calculations too far below 1`] = `
               <div
                 className="sc-gzVnrw gfFhBZ"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 style={
                   Object {
                     "borderBottom": undefined,
@@ -675,6 +750,9 @@ exports[`layout calculations too far below 1`] = `
               <div
                 className="sc-gzVnrw gfFhBZ"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 style={
                   Object {
                     "borderBottom": undefined,
@@ -693,6 +771,9 @@ exports[`layout calculations too far below 1`] = `
               <div
                 className="sc-gzVnrw gfFhBZ"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 style={
                   Object {
                     "borderBottom": undefined,
@@ -702,6 +783,9 @@ exports[`layout calculations too far below 1`] = `
               <div
                 className="sc-gzVnrw gfFhBZ"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 style={
                   Object {
                     "borderBottom": undefined,
@@ -779,6 +863,9 @@ exports[`layout calculations too far left 1`] = `
               <div
                 className="sc-gzVnrw gfFhBZ"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 style={
                   Object {
                     "borderBottom": undefined,
@@ -788,6 +875,9 @@ exports[`layout calculations too far left 1`] = `
               <div
                 className="sc-gzVnrw gfFhBZ"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 style={
                   Object {
                     "borderBottom": undefined,
@@ -806,6 +896,9 @@ exports[`layout calculations too far left 1`] = `
               <div
                 className="sc-gzVnrw gfFhBZ"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 style={
                   Object {
                     "borderBottom": undefined,
@@ -815,6 +908,9 @@ exports[`layout calculations too far left 1`] = `
               <div
                 className="sc-gzVnrw gfFhBZ"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 style={
                   Object {
                     "borderBottom": undefined,
@@ -892,6 +988,9 @@ exports[`layout calculations too far right 1`] = `
               <div
                 className="sc-gzVnrw gfFhBZ"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 style={
                   Object {
                     "borderBottom": undefined,
@@ -901,6 +1000,9 @@ exports[`layout calculations too far right 1`] = `
               <div
                 className="sc-gzVnrw gfFhBZ"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 style={
                   Object {
                     "borderBottom": undefined,
@@ -919,6 +1021,9 @@ exports[`layout calculations too far right 1`] = `
               <div
                 className="sc-gzVnrw gfFhBZ"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 style={
                   Object {
                     "borderBottom": undefined,
@@ -928,6 +1033,9 @@ exports[`layout calculations too far right 1`] = `
               <div
                 className="sc-gzVnrw gfFhBZ"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 style={
                   Object {
                     "borderBottom": undefined,
@@ -1038,6 +1146,9 @@ exports[`static render 1`] = `
               <div
                 className="sc-gzVnrw gfFhBZ"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 style={
                   Object {
                     "borderBottom": undefined,
@@ -1047,6 +1158,9 @@ exports[`static render 1`] = `
               <div
                 className="sc-gzVnrw gfFhBZ"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 style={
                   Object {
                     "borderBottom": undefined,
@@ -1056,42 +1170,9 @@ exports[`static render 1`] = `
               <div
                 className="sc-gzVnrw gfFhBZ"
                 onClick={[Function]}
-                style={
-                  Object {
-                    "borderBottom": undefined,
-                  }
-                }
-              />
-            </div>
-            <div
-              className="sc-bZQynM loNdad"
-              style={
-                Object {
-                  "borderRight": undefined,
-                }
-              }
-            >
-              <div
-                className="sc-gzVnrw gfFhBZ"
-                onClick={[Function]}
-                style={
-                  Object {
-                    "borderBottom": undefined,
-                  }
-                }
-              />
-              <div
-                className="sc-gzVnrw gfFhBZ"
-                onClick={[Function]}
-                style={
-                  Object {
-                    "borderBottom": undefined,
-                  }
-                }
-              />
-              <div
-                className="sc-gzVnrw gfFhBZ"
-                onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 style={
                   Object {
                     "borderBottom": undefined,
@@ -1110,6 +1191,9 @@ exports[`static render 1`] = `
               <div
                 className="sc-gzVnrw gfFhBZ"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 style={
                   Object {
                     "borderBottom": undefined,
@@ -1119,6 +1203,9 @@ exports[`static render 1`] = `
               <div
                 className="sc-gzVnrw gfFhBZ"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 style={
                   Object {
                     "borderBottom": undefined,
@@ -1128,6 +1215,54 @@ exports[`static render 1`] = `
               <div
                 className="sc-gzVnrw gfFhBZ"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "borderBottom": undefined,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="sc-bZQynM loNdad"
+              style={
+                Object {
+                  "borderRight": undefined,
+                }
+              }
+            >
+              <div
+                className="sc-gzVnrw gfFhBZ"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "borderBottom": undefined,
+                  }
+                }
+              />
+              <div
+                className="sc-gzVnrw gfFhBZ"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "borderBottom": undefined,
+                  }
+                }
+              />
+              <div
+                className="sc-gzVnrw gfFhBZ"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 style={
                   Object {
                     "borderBottom": undefined,
@@ -1138,6 +1273,9 @@ exports[`static render 1`] = `
           </div>
           <div
             className="sc-htoDjs btzGSf"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
             style={
               Object {
                 "height": "33.33333333333333%",
@@ -1149,6 +1287,9 @@ exports[`static render 1`] = `
           />
           <div
             className="sc-htoDjs btzGSf"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
             style={
               Object {
                 "height": "33.33333333333333%",
@@ -1160,6 +1301,9 @@ exports[`static render 1`] = `
           />
           <div
             className="sc-htoDjs btzGSf"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
             style={
               Object {
                 "height": "33.33333333333333%",
@@ -1171,6 +1315,9 @@ exports[`static render 1`] = `
           />
           <div
             className="sc-htoDjs btzGSf"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
             style={
               Object {
                 "height": "33.33333333333333%",

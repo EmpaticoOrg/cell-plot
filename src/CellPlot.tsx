@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import Frame from './Frame';
-import Cells from './Cells';
+import Cells, {Coordinate} from './Cells';
 import {PlotContext, PlotContextProps} from './PlotContext';
 import {PlotConsumer, PlotConsumerProps} from './PlotConsumer';
 
@@ -14,7 +14,8 @@ export interface Props {
   horizontalBorders?: string[]; // a cyclic sequence of strings for the css border property
   ys: number[];
 
-  onClick?: (x: number, y: number) => void;
+  onClick?: (x: number, y: number) => void; // TODO: convert to Coordinate in 2.x release
+  onHover?: (coordinate: Coordinate) => void;
 }
 
 function snap(value: number, interval: number): number {
@@ -92,7 +93,8 @@ export default class CellPlot extends React.Component<Props> {
           verticalBorders={this.props.verticalBorders}
           ys={this.props.ys}
           horizontalBorders={this.props.horizontalBorders}
-          onClick={this.props.onClick} />
+          onClick={this.props.onClick}
+          onHover={this.props.onHover} />
 
         {this.props.children}
       </Frame>
