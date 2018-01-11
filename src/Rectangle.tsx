@@ -9,6 +9,7 @@ export interface Props {
   width: number | string;
   height: number | string;
   onHover?: (hovering: boolean) => void;
+  innerRef?: (element: HTMLDivElement) => void;
 }
 
 const Container = styled.div`
@@ -62,6 +63,7 @@ export default class Rectangle extends React.Component<Props & React.HTMLAttribu
       onMouseLeave={() => onHover && onHover(false)}
       {...remaining}
       style={{...layout, ...style}}
+      innerRef={this.props.innerRef}
     />;
   }
 }
