@@ -4,6 +4,7 @@ import Frame from './Frame';
 import Cells, {Coordinate} from './Cells';
 import {PlotContext, PlotContextProps} from './PlotContext';
 import {PlotConsumer, PlotConsumerProps} from './PlotConsumer';
+import {convertCoordinate} from './util';
 
 export interface Props {
   xLabels?: React.ReactNode[];
@@ -16,19 +17,6 @@ export interface Props {
 
   onClick?: (x: number, y: number) => void; // TODO: convert to Coordinate in 2.x release
   onHover?: (coordinate: Coordinate) => void;
-}
-
-function snap(value: number, interval: number): number {
-  const excess = value % interval;
-  if (excess >= 0.5 * interval) {
-    return value + interval - excess;
-  } else {
-    return value - excess;
-  }
-}
-
-function clamp(value: number, {min, max}: {min: number, max: number}): number {
-  return Math.max(Math.min(value, max), min);
 }
 
 /**
@@ -60,21 +48,11 @@ export default class CellPlot extends React.Component<Props> {
       gridYRange: gridYMax - gridYMin + gridYStep,
       yAt: (pxY: number): number => {
         const pxPerY = this.el.offsetHeight / gridYRange;
-        return Math.round(
-          clamp(
-            snap(pxY / pxPerY + gridYMin, gridYStep),
-            {min: gridYMin, max: gridYMax}
-          )
-        );
+        return convertCoordinate(pxY / pxPerY, {min: gridYMin, max: gridYMax, interval: gridYStep});
       },
       xAt: (pxX: number): number => {
         const pxPerX = this.el.offsetWidth / gridXRange;
-        return Math.round(
-          clamp(
-            snap(pxX / pxPerX + gridXMin, gridXStep),
-            {min: gridXMin, max: gridXMax}
-          )
-        );
+        return convertCoordinate(pxX / pxPerX, {min: gridXMin, max: gridXMax, interval: gridXStep});
       }
     };
   }
