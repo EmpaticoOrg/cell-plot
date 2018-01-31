@@ -49,7 +49,7 @@
     "tslib": "^1.7.1"
   },
   "peerDependencies": {
-    "react": "^15.0.0"
+    "react": ">15.0.0"
   },
   "jest": {
     "transform": {
