@@ -1,6 +1,6 @@
 {
   "name": "cell-plot",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "React components for a plottable coordinate plane built with Flexbox cells.",
   "main": "dist/index.main.js",
   "module": "dist/index.module.js",
@@ -26,7 +26,8 @@
     "@storybook/storybook-deployer": "^2.0.0",
     "@types/jest": "^21.1.1",
     "@types/prop-types": "^15.5.2",
-    "@types/react": "^16.0.7",
+    "@types/react": "^16.3.16",
+    "@types/react-dom": "^16.0.6",
     "@types/react-test-renderer": "^15.5.4",
     "@types/storybook__addon-actions": "^3.0.1",
     "@types/storybook__addon-knobs": "^3.2.0",
@@ -45,11 +46,11 @@
     "typescript": "^2.4.2"
   },
   "dependencies": {
-    "styled-components": "^2.2.4",
-    "tslib": "^1.7.1"
+    "styled-components": ">= 2.0",
+    "tslib": "^1.9.0"
   },
   "peerDependencies": {
-    "react": ">15.0.0"
+    "react": "*"
   },
   "jest": {
     "transform": {

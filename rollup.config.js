@@ -3,6 +3,8 @@ import filesize from 'rollup-plugin-filesize'
 import commonjs from 'rollup-plugin-commonjs'
 import pkg from './package.json'
 
+const external = [...Object.keys(pkg.dependencies), ...Object.keys(pkg.peerDependencies)];
+
 const plugins = [
   nodeResolve({
     jsnext: true
@@ -19,6 +21,7 @@ export default [
       format: "cjs"
     },
     external: ['react'],
+    external,
     plugins
   },
   {
@@ -27,7 +30,7 @@ export default [
       file: "./dist/index.module.js",
       format: "es"
     },
-    external: ['react'].concat(Object.keys(pkg.dependencies)),
+    external,
     plugins
   }
 ]
